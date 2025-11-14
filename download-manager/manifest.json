@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "下载管理器",
+  "version": "1.0.0",
+  "description": "模拟Edge浏览器的下载管理器，显示下载历史和文件状态",
+  "permissions": [
+    "downloads",
+    "downloads.open"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
+
