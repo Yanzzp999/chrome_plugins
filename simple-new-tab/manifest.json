@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Material New Tab",
+  "version": "1.0",
+  "description": "A minimal new tab page with search and shortcuts, inspired by Google Material Design.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://www.google.com/s2/favicons*" 
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
+

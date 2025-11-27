@@ -1,0 +1,76 @@
+/* 
+ * 屏蔽 Google 搜索页面的搜索历史记录弹窗
+ * 只隐藏搜索建议下拉框，不影响搜索输入框本身
+ */
+
+/* ===== 搜索建议/历史下拉框 ===== */
+
+/* 屏蔽搜索建议下拉容器 */
+div[jsname="LwH6nd"],
+ul[jsname="bw4e9b"],
+div.aajZCb,
+div.UUbT9,
+div.OBMEnb {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* 屏蔽搜索建议的整个下拉框 */
+div[jscontroller="HMXFQd"],
+div.M8Xxhb,
+div[data-async-context] ul.G43f7e {
+  display: none !important;
+}
+
+/* 屏蔽自动补全弹窗 */
+div.sbfc,
+div.sbc,
+div.pac-container,
+ul.sbct,
+ul.erkvQe {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* ===== 搜索建议列表相关 ===== */
+
+/* 隐藏搜索建议下拉框（role="listbox" 的元素） */
+div[role="listbox"],
+ul[role="listbox"] {
+  display: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* 屏蔽搜索建议容器 - 新版Google */
+div.wM6W7d,
+div.lJ9FBc,
+div.QrShKb,
+div[jsname="oKYLk"],
+div.xtSCL {
+  display: none !important;
+}
+
+/* Google 搜索历史记录项目 */
+li.sbct,
+li.G43f7e,
+div[data-attrid="AutocompletePrediction"],
+li[data-view-type="1"] {
+  display: none !important;
+}
+
+/* 搜索建议弹出层 */
+div.Umvnrc,
+div.gws-plugins-horizon-compass__c,
+div.CcAdNb {
+  display: none !important;
+}
+
+/* 首页搜索框下的建议区域 - 更精确的选择器 */
+div.RNNXgb ul[role="listbox"],
+div.RNNXgb div[role="listbox"],
+form[role="search"] ul[role="listbox"] {
+  display: none !important;
+  visibility: hidden !important;
+}

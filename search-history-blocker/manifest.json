@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Search History Blocker",
+  "version": "1.0",
+  "description": "屏蔽新标签页搜索框和Google搜索历史记录弹窗",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "https://www.google.com.hk/*",
+        "https://www.google.co.jp/*",
+        "https://www.google.com.tw/*",
+        "https://www.google.co.uk/*",
+        "https://google.com/*"
+      ],
+      "css": ["google-blocker.css"],
+      "js": ["google-blocker.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
